@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Example</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center; font-size: 50px;">Image Guidelines (ACi)
+        </h1>
+        <form>
+            <input type="text" name="search" placeholder="Search..." size="50">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="search-results"></div>
+    </div>
+</body>
+
+<script>
+    const searchForm = document.querySelector('form');
+    const searchInput = document.querySelector('input');
+    const searchResults = document.querySelector('#search-results');
+
+    searchForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Get the search term from the input field
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Fetch the data from the redirect.json file
+        fetch('/json/redirect.json')
+            .then(response1 => response1.json())
+            .then(redirect => {
+                const filteredData = redirect.redirection.filter(link => {
+                    return link.key1.toLowerCase() == searchTerm || link.key2.toLowerCase() == searchTerm || link.key3.toLowerCase() == searchTerm
+                });
+                location.replace('http://127.0.0.1:5500' + '/html' + filteredData[0].link);
+            })
+    });
+</script>
+
+
+</html>

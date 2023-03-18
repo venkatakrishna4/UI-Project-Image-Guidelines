@@ -1,0 +1,99 @@
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+#search-results {
+  margin-top: 20px;
+}
+
+article {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+article p {
+  margin-bottom: 0;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+Flex Box for adding 3 images in a single row
+*/
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Paragraph font size */
+.para-text {
+  font-size: 18px;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.figure-caption-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #ccc;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.images-heading{
+  text-align: center;
+}

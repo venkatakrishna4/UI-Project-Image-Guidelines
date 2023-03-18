@@ -1,0 +1,23 @@
+{
+    "redirection": [
+        {
+          "key1": "Underwear",
+          "key2": "Lingerie",
+          "key3": "Underwear/Lingerie",
+          "link": "/underwear-lingerie.html"
+        },
+        {
+          "key1": "CTA",
+          "key2": "call-to-action",
+          "key3": "CTA / call-to-action",
+          "link": "/call-to-action.html"
+        },
+        {
+          "key1": "dating",
+          "key2": "dating",
+          "key3": "dating",
+          "link": "/dating.html"
+        }
+        
+      ]
+}
