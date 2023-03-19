@@ -17,7 +17,12 @@
           "key2": "dating",
           "key3": "dating",
           "link": "/dating.html"
+        },
+        {
+          "key1": "alcohol",
+          "key2": "alcohol",
+          "key3": "alcohol",
+          "link": "/alcohol.html"
         }
-        
       ]
 }
